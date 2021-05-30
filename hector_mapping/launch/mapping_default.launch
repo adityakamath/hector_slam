@@ -49,6 +49,13 @@
       <param name="pub_debug_output" value="true"/>
     -->
     <param name="tf_map_scanmatch_transform_frame_name" value="$(arg tf_map_scanmatch_transform_frame_name)" />
+    
+     <remap from="map_metadata" to="/hector_mapping/mapmetadata"/>
+     <remap from="map" to="/hector_mapping/map"/>
+     <remap from="slam_out_pose" to="/hector_mapping/slam_out_pose"/>
+     <remap from="slam_cloud" to="/hector_mapping/slam_cloud"/>
+     <remap from="poseupdate" to="/hector_mapping/pose_update"/>
+     <remap from="trajectory" to="/hector_mapping/trajectory"/>
   </node>
 
 </launch>
